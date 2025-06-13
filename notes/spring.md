@@ -202,6 +202,26 @@ Summary: JavaBean vs Spring Bean
 | Purpose | Represent data / properties | Perform business logic / services |
 | Example | `Customer`, `Product` | `CustomerService`, `EmailSender`, `AppConfig` |
 
+
+## IOC vs Dependency Injection
+
+🔍 Key Differences
+| Aspect               | Inversion of Control (IoC)                     | Dependency Injection (DI)                            |
+| -------------------- | ---------------------------------------------- | ---------------------------------------------------- |
+| What it is           | A design principle                             | A design pattern or technique implementing IoC       |
+| Scope                | Broad: delegates control to framework          | Narrow: deals specifically with passing dependencies |
+| Role in Spring       | Core concept – Spring manages object lifecycle | A mechanism Spring uses to achieve IoC               |
+| Who creates objects  | Spring container                               | Spring container                                     |
+| Who receives objects | N/A (not specific to dependencies)             | Your components (beans)                              |
+
+
+✅ Summary
+IoC: The big idea — Spring manages your objects and how they’re wired together.
+
+DI: The concrete mechanism Spring uses to achieve that — it injects the dependencies your classes need.
+
+They work together: Spring’s IoC container uses DI to wire up your application.
+
 ## Resources/Articles
 
 - [IOC vs DI](https://howtodoinjava.com/spring-core/spring-ioc-vs-di/)
