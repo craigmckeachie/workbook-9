@@ -15,6 +15,38 @@ Classes that get automatically created as an object instance for you.
   - private fields and getters and setters
   - "parameterless" constructor
 
+
+Absolutely — here’s an updated comparison table including **`@Service`** alongside `@Component`, `@Repository`, and `@Controller`:
+
+---
+
+## 📊 Comparison Table: `@Component` vs `@Service` vs `@Repository` vs `@Controller`
+
+| Feature                              | `@Component`                     | `@Service`                                 | `@Repository`                                  | `@Controller`                                        |
+| ------------------------------------ | -------------------------------- | ------------------------------------------ | ---------------------------------------------- | ---------------------------------------------------- |
+| **Purpose**                          | Generic Spring-managed bean      | Business logic / service layer             | Data access / persistence layer                | Web layer (handles HTTP requests)                    |
+| **Typical Use Case**                 | Utility classes, config, helpers | Application workflows, orchestration logic | DAO classes that interact with DB              | MVC controllers in web apps                          |
+| **Layer of Application**             | Any                              | Service (business logic)                   | Persistence (DAO) layer                        | Presentation (MVC) layer                             |
+| **Extra Behavior Provided**          | None                             | None (just semantic)                       | Exception translation to `DataAccessException` | Enables request mapping with `@RequestMapping`, etc. |
+| **Meta-annotated With `@Component`** | ✅ Yes                            | ✅ Yes                                      | ✅ Yes                                          | ✅ Yes                                                |
+| **Detected by `@ComponentScan`**     | ✅ Yes                            | ✅ Yes                                      | ✅ Yes                                          | ✅ Yes                                                |
+| **Used With Web Framework**          | ❌ No                             | ❌ No                                       | ❌ No                                           | ✅ Yes                                                |
+| **Data Binding / View Rendering**    | ❌ No                             | ❌ No                                       | ❌ No                                           | ✅ Yes (used with templates or REST)                  |
+| **Spring Bean Scope** (default)      | Singleton                        | Singleton                                  | Singleton                                      | Singleton                                            |
+| **REST Version Available**           | ❌ No                             | ❌ No                                       | ❌ No                                           | ✅ `@RestController` (adds `@ResponseBody`)           |
+
+---
+
+### ✅ Summary by Use:
+
+* **`@Component`**: Use for anything that doesn’t neatly fit into other stereotypes (e.g., config classes, file utilities).
+* **`@Service`**: Use for business logic, orchestration between repositories and external services.
+* **`@Repository`**: Use for database interaction; gives automatic persistence exception translation.
+* **`@Controller`**: Use for web controllers that map HTTP requests to Java methods and return views or JSON.
+
+Let me know if you’d like a **visual diagram** or a **code sample** that shows all four working together in a simple Spring Boot project!
+
+
 ## What is Spring Boot
 
 - [What is Spring Boot conversation](https://chatgpt.com/share/684c6114-42f0-8000-9ac8-c4c47079f04f)
