@@ -172,7 +172,9 @@ public class Main {
 | Constructor Injection | “We give the controller what it needs instead of making it go find it.” |
 | Manual vs Auto        | “We did the wiring ourselves… now Spring does it for us.”               |
 
-### Example 2
+### Example 2 Spring Boot using Sakila
+
+> This is a a well commented app that uses spring boot to get films from the Sakila database.
 
 - [Spring Boot Sakila](https://github.com/erics273/SpringBootSakila)
 - [Spring Boot Sakila with DB](https://github.com/erics273/SpringBootSakila/tree/withDB)
