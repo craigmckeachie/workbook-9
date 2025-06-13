@@ -19,7 +19,10 @@ Classes that get automatically created as an object instance for you.
 
 - [What is Spring Boot conversation](https://chatgpt.com/share/684c6114-42f0-8000-9ac8-c4c47079f04f)
 
-## Simple Example
+## Simple Examples
+
+### Example 1
+
 
 ## ✅ Step 1: Manual Dependency Injection (No Spring)
 
@@ -137,3 +140,9 @@ public class Main {
 | `@Controller`         | “Marks a class that handles user input or coordinates things.”          |
 | Constructor Injection | “We give the controller what it needs instead of making it go find it.” |
 | Manual vs Auto        | “We did the wiring ourselves… now Spring does it for us.”               |
+
+
+
+### Example 2
+- [Spring Boot Sakila](https://github.com/erics273/SpringBootSakila)
+- [Spring Boot Sakila with DB](https://github.com/erics273/SpringBootSakila/tree/withDB)
