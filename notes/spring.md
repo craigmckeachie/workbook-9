@@ -23,7 +23,6 @@ Classes that get automatically created as an object instance for you.
 
 ### Example 1
 
-
 ## ✅ Step 1: Manual Dependency Injection (No Spring)
 
 ### `UserDao.java` — the DAO (Data Access Object)
@@ -141,8 +140,34 @@ public class Main {
 | Constructor Injection | “We give the controller what it needs instead of making it go find it.” |
 | Manual vs Auto        | “We did the wiring ourselves… now Spring does it for us.”               |
 
-
-
 ### Example 2
+
 - [Spring Boot Sakila](https://github.com/erics273/SpringBootSakila)
 - [Spring Boot Sakila with DB](https://github.com/erics273/SpringBootSakila/tree/withDB)
+
+## JavaBean vs Spring Bean
+
+Summary: JavaBean vs Spring Bean
+
+| Feature         | JavaBean                  | Spring Bean                                      |
+| --------------- | ------------------------- | ------------------------------------------------ |
+| Use case        | Data holder (model/DTO)   | Any Spring-managed object                        |
+| Requires fields | ✅ Yes                    | ❌ No — can have 0 fields                        |
+| Getters/setters | ✅ Required               | ❌ Not required                                  |
+| Constructor     | ✅ Public no-arg required | ❌ Not required (Spring can use any constructor) |
+| Created by      | You                       | Spring Framework                                 |
+
+---
+
+🔁 How They Overlap
+| Feature | JavaBean | Spring Bean |
+| --------------------------- | --------------------------- | --------------------------------------------- |
+| Requires no-arg constructor | ✅ Yes | ❌ Not necessarily |
+| Requires getters/setters | ✅ Yes | ❌ Only if needed |
+| Managed by Spring? | ❌ No | ✅ Yes |
+| Purpose | Represent data / properties | Perform business logic / services |
+| Example | `Customer`, `Product` | `CustomerService`, `EmailSender`, `AppConfig` |
+
+## Resources/Articles
+
+- [IOC vs DI](https://howtodoinjava.com/spring-core/spring-ioc-vs-di/)
