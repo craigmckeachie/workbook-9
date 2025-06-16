@@ -9,7 +9,7 @@ Everything you are required to know about Spring is included in this simple well
 
 ## Important Concepts
 
-- Important Concepts with links to specific examples
+Important Concepts with links to specific examples
 
 - Creates/instantiates objects from your classes for you
 - There is a `run` method you call to start a spring application/make an application a Spring application
