@@ -11,6 +11,10 @@ public class Program {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(Program.class, args);
 
+		//This is the code that Spring calls on classes that implement the CommandLineRunner interface
+//		ConsoleApplication consoleApplication = new ConsoleApplication();
+//		consoleApplication.run();
+
 
 		// Get all bean names and sort them alphabetically
 //		String[] beanNames = context.getBeanDefinitionNames();
