@@ -3,14 +3,15 @@
 ## Example Application
 
 Everything you are required to know about Spring is included in this simple well commented example on Github.
+
 - [Simple Sakila Example Application](https://github.com/erics273/SpringBootSakila/tree/main/src/main/java/com/pluralsight)
 - [Sakila Example Application with Configuration and Database (JDBC)](https://github.com/erics273/SpringBootSakila/tree/main/src/main/java/com/pluralsight)
-
 
 ## Important Concepts
 
 Important Concepts with links to specific examples
 
+- Create a new project using https://start.spring.io/
 - Creates/instantiates objects from your classes for you
 - There is a `run` method you call to start a spring application/make an application a Spring application
   - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/MainProgram.java#L22)
@@ -19,6 +20,7 @@ Important Concepts with links to specific examples
 - It finds which classes to create because you marked them with the @Component annotation
 - There are other more specific @Component annotations including: `@Service`, `@Repository`, `@Controller`, `@Configuration`
 - We will just use these annotations to identify a class Spring needs to create for us:
+
   - `@Component` (general purpose most commonly used)
     - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/dao/SimpleFilmDao.java#L12)
   - `@Controller` (for web applications, used to respond to requests and generate the user interface (view))
@@ -35,6 +37,7 @@ Important Concepts with links to specific examples
         - so it allows us to customize or configure the object Spring creates with different configuration values
     - Configuration values are injected into the Configuration classes constructor and mapped to parameters using `@Value`
     - [Example](https://github.com/erics273/SpringBootSakila/blob/withDB/src/main/java/com/pluralsight/config/DatabaseConfig.java#L28)
+
 - The classes Spring creates for you are made available where you need them in the application by "injecting" them
 - There are 3 ways to inject objects using the `@Autowired` annotation
   - constructor
