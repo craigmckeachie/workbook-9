@@ -23,7 +23,7 @@ Important Concepts with links to specific examples
     - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/dao/SimpleFilmDao.java#L12)
   - `@Controller` (for web applications, used to respond to requests and generate the user interface (view))
   - `@Configuration` (for classes that read configuration files)
-    -
+
   - Reading configuration (properties) files works as follows
     - there is a class that reads the configuration file `application.properties` which is marked with the `@Configuration` annotation at the class level
       - [Example](https://github.com/erics273/SpringBootSakila/blob/withDB/src/main/java/com/pluralsight/config/DatabaseConfig.java#L13)
