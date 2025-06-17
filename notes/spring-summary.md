@@ -45,5 +45,5 @@ Important Concepts with links to specific examples
   - property
     - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/FilmApp.java#L22)
 - Spring has support for console applications or command-line applications
-  - If a class is annotated with `@Component` and  implements the `CommandLineRunner` interface which requires the class to have one `run` method that takes an `args` parameter to receive command-line arguments...a Spring application will automatically call the `run` method on the class that is a `CommandLineRunner`
+  - If a class is annotated with `@Component` and implements the `CommandLineRunner` interface which requires the class to have one `run` method that takes an `args` parameter to receive command-line arguments...a Spring application will automatically call the `run` method on the class that is a `CommandLineRunner`
   - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/FilmApp.java#L17)
