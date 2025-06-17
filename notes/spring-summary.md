@@ -5,7 +5,7 @@
 Everything you are required to know about Spring is included in this simple well commented example on Github.
 
 - [Simple Sakila Example Application](https://github.com/erics273/SpringBootSakila/tree/main/src/main/java/com/pluralsight)
-- [Sakila Example Application with Configuration and Database (JDBC)](https://github.com/erics273/SpringBootSakila/tree/main/src/main/java/com/pluralsight)
+- [Sakila Example Application with Configuration and Database (JDBC)](https://github.com/erics273/SpringBootSakila/tree/withDB/src/main/java/com/pluralsight)
 
 ## Important Concepts
 
