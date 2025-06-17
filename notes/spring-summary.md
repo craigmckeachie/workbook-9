@@ -13,7 +13,7 @@ Important Concepts with links to specific examples
 
 - Create a new project using https://start.spring.io/
 - Creates/instantiates objects from your classes for you
-- There is a `run` method you call to start a spring application/make an application a Spring application
+- There is a `run` method you call to start a Spring application
   - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/MainProgram.java#L22)
 - When you call the `run` (start) method it scans that application for classes to create/instantiate
   - [Example](https://github.com/erics273/SpringBootSakila/blob/main/src/main/java/com/pluralsight/dao/SimpleFilmDao.java#L12)
