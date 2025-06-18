@@ -1,5 +1,7 @@
 # MVC Notes
 
+- [Simple Controller Example](https://github.com/craigmckeachie/workbook-9/blob/main/demo.api/src/main/java/com/pluralsight/demo/api/controller/AuthorController.java)
+---
 
 If dealing with id use path variable, otherwise use requestparam
 
